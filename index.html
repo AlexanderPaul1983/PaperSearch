@@ -8,15 +8,23 @@
 <body>
     <h1>Forschungsartikel-Datenbank</h1>
 
-    <!-- Suchfeld für Autoren -->
+    <!-- Suchfeld für Autor -->
     <div>
         <label for="author">Suche nach Autor:</label>
         <input type="text" id="author" placeholder="Autor eingeben">
-        <button onclick="searchByAuthor()">Suche</button>
+        <button onclick="searchByAuthor()">Suche nach Autor</button>
     </div>
-
+    
+    <!-- Suchfeld für Thema -->
+    <div>
+        <label for="subject">Suche nach Thema:</label>
+        <input type="text" id="subject" placeholder="Thema eingeben">
+        <button onclick="searchBySubject()">Suche nach Thema</button>
+    </div>
+    
     <!-- Ergebnisanzeige -->
     <div id="results"></div>
+    
 
     <script src="script.js"></script>
 </body>
