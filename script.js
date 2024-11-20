@@ -1,9 +1,9 @@
-// Funktion zur Suche nach Artikeln eines bestimmten Autors
+
 async function searchByAuthor() {
     const author = document.getElementById("author").value;
-    const endpoint = "http://localhost:3030/Forschungsartikeln/sparql"; // Endpunkt für dein Dataset
+    const endpoint = "http://localhost:3030/Forschungsartikeln/sparql"; 
 
-    // SPARQL-Abfrage für Artikel eines bestimmten Autors
+    // 
     const query = `
         PREFIX dc: <http://purl.org/dc/elements/1.1/>
         SELECT ?article ?title ?year ?subject ?creator
@@ -16,7 +16,7 @@ async function searchByAuthor() {
         }
     `;
 
-    // Anfrage an den SPARQL-Endpunkt senden
+    
     const url = endpoint + "?query=" + encodeURIComponent(query);
     try {
         const response = await fetch(url, {
@@ -35,12 +35,12 @@ async function searchByAuthor() {
     }
 }
 
-// Funktion zur Anzeige der Ergebnisse der Autorensuche
+
 function displayResults(data) {
     const resultsDiv = document.getElementById("results");
-    resultsDiv.innerHTML = ""; // Vorherige Ergebnisse löschen
+    resultsDiv.innerHTML = ""; 
 
-    // Ergebnisse anzeigen
+    
     data.results.bindings.forEach(row => {
         const articleInfo = document.createElement("div");
         articleInfo.innerHTML = `
@@ -53,12 +53,12 @@ function displayResults(data) {
     });
 }
 
-// Funktion zur Suche nach Artikeln zu einem bestimmten Thema
+
 async function searchBySubject() {
     const subject = document.getElementById("subject").value;
-    const endpoint = "http://localhost:3030/Forschungsartikeln/sparql"; // Endpunkt für dein Dataset
+    const endpoint = "http://localhost:3030/Forschungsartikeln/sparql"; 
 
-    // SPARQL-Abfrage für Artikel mit einem bestimmten Thema
+    
     const query = `
         PREFIX dc: <http://purl.org/dc/elements/1.1/>
         SELECT ?article ?title ?year ?creator
@@ -70,7 +70,7 @@ async function searchBySubject() {
         }
     `;
 
-    // Anfrage an den SPARQL-Endpunkt senden
+    
     const url = endpoint + "?query=" + encodeURIComponent(query);
     try {
         const response = await fetch(url, {
@@ -89,12 +89,12 @@ async function searchBySubject() {
     }
 }
 
-// Funktion zur Anzeige der Ergebnisse der Themensuche
+
 function displayResultsBySubject(data) {
     const resultsDiv = document.getElementById("results");
-    resultsDiv.innerHTML = ""; // Vorherige Ergebnisse löschen
+    resultsDiv.innerHTML = ""; 
 
-    // Ergebnisse anzeigen für die Suche nach Thema
+    
     data.results.bindings.forEach(row => {
         const articleInfo = document.createElement("div");
         articleInfo.innerHTML = `
