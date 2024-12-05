@@ -1,0 +1,142 @@
+@prefix ex: <http://example.org/article/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix cite: <http://example.org/citation/> .
+
+
+ex:Artikel1
+    dc:title "Einfluss der Quantenmechanik auf die Informatik" ;
+    dc:creator "Dr. Maria Schmidt" ;
+    dc:date "2023" ;
+    dc:subject "Quantenmechanik" ;
+    cite:cites ex:Artikel2, ex:Artikel3 .
+
+ex:Artikel14
+    dc:title "Quantum Computing für Anfänger" ;
+    dc:creator "Dr. Maria Schmidt" ;
+    dc:date "2022" ;
+    dc:subject "Quantenmechanik" .
+
+ex:Artikel19
+    dc:title "Entwicklungen in der Quanteninformatik" ;
+    dc:creator "Dr. Maria Schmidt" ;
+    dc:date "2021" ;
+    dc:subject "Quanteninformatik" ;
+    cite:cites ex:Artikel3, ex:Artikel7 .
+
+ex:Artikel20
+    dc:title "Die Zukunft der Quantenkommunikation" ;
+    dc:creator "Dr. Maria Schmidt" ;
+    dc:date "2024" ;
+    dc:subject "Quantenkommunikation" ;
+    cite:cites ex:Artikel19 .
+
+ex:Artikel2
+    dc:title "Grundlagen der Informatik" ;
+    dc:creator "Prof. Max Müller" ;
+    dc:date "2020" ;
+    dc:subject "Informatik" .
+
+ex:Artikel21
+    dc:title "Algorithmische Grundlagen und Anwendungen" ;
+    dc:creator "Prof. Max Müller" ;
+    dc:date "2021" ;
+    dc:subject "Algorithmik" ;
+    cite:cites ex:Artikel2 .
+
+ex:Artikel22
+    dc:title "Informatik und Gesellschaft" ;
+    dc:creator "Prof. Max Müller" ;
+    dc:date "2022" ;
+    dc:subject "Gesellschaft" ;
+    cite:cites ex:Artikel5, ex:Artikel21 .
+
+ex:Artikel23
+    dc:title "Rechenkomplexität und Optimierung" ;
+    dc:creator "Prof. Max Müller" ;
+    dc:date "2023" ;
+    dc:subject "Optimierung" ;
+    cite:cites ex:Artikel2, ex:Artikel21 .
+
+ex:Artikel3
+    dc:title "Fortschritte in der Quantenphysik" ;
+    dc:creator "Dr. Anna Meier" ;
+    dc:date "2019" ;
+    dc:subject "Quantenphysik" .
+
+ex:Artikel7
+    dc:title "Quantencomputer und ihre Zukunft" ;
+    dc:creator "Dr. Anna Meier" ;
+    dc:date "2021" ;
+    dc:subject "Quantenmechanik" ;
+    cite:cites ex:Artikel3 .
+
+ex:Artikel18
+    dc:title "Quantenphysik und ihre Anwendungen" ;
+    dc:creator "Dr. Anna Meier" ;
+    dc:date "2023" ;
+    dc:subject "Quantenphysik" ;
+    cite:cites ex:Artikel3, ex:Artikel14 .
+
+ex:Artikel24
+    dc:title "Nanostrukturen und Quantenphänomene" ;
+    dc:creator "Dr. Anna Meier" ;
+    dc:date "2022" ;
+    dc:subject "Nanotechnologie" ;
+    cite:cites ex:Artikel7, ex:Artikel3 .
+
+ex:Artikel25
+    dc:title "Konzepte der Quantenmechanik im Alltag" ;
+    dc:creator "Dr. Anna Meier" ;
+    dc:date "2024" ;
+    dc:subject "Quantenmechanik" ;
+    cite:cites ex:Artikel18, ex:Artikel14 .
+
+ex:Artikel4
+    dc:title "Künstliche Intelligenz in der Medizin" ;
+    dc:creator "Dr. Karl Meyer" ;
+    dc:date "2021" ;
+    dc:subject "Medizin" ;
+    cite:cites ex:Artikel1, ex:Artikel3 .
+
+ex:Artikel5
+    dc:title "Machine Learning und Gesellschaft" ;
+    dc:creator "Prof. Lina Weber" ;
+    dc:date "2022" ;
+    dc:subject "Gesellschaft" ;
+    cite:cites ex:Artikel4 .
+
+ex:Artikel6
+    dc:title "Informatik und Ethik" ;
+    dc:creator "Dr. Tom Fischer" ;
+    dc:date "2023" ;
+    dc:subject "Ethik" ;
+    cite:cites ex:Artikel2, ex:Artikel5 .
+
+ex:Artikel7
+    dc:title "Quantencomputer und ihre Zukunft" ;
+    dc:creator "Dr. Anna Meier" ;
+    dc:date "2021" ;
+    dc:subject "Quantenmechanik" ;
+    cite:cites ex:Artikel3 .
+
+ex:Artikel8
+    dc:title "Big Data und Datenschutz" ;
+    dc:creator "Prof. Lea Schwarz" ;
+    dc:date "2020" ;
+    dc:subject "Datenschutz" ;
+    cite:cites ex:Artikel5 .
+
+ex:Artikel9
+    dc:title "Fortschritte in der Robotik" ;
+    dc:creator "Dr. Karl Meyer" ;
+    dc:date "2018" ;
+    dc:subject "Robotik" ;
+    cite:cites ex:Artikel4, ex:Artikel8 .
+
+ex:Artikel10
+    dc:title "Ethik in der künstlichen Intelligenz" ;
+    dc:creator "Prof. Tom Fischer" ;
+    dc:date "2021" ;
+    dc:subject "Ethik" ;
+    cite:cites ex:Artikel6 .
+
